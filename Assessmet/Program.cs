@@ -1,5 +1,7 @@
 ﻿
 using Assessmet.Context;
+using Assessmet.IRepository;
+using Assessmet.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
@@ -12,6 +14,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddScoped<IAppRepo, AppRepo>();
+builder.Services.AddScoped<IWorkFlowRepo, WorkFlowRepo>();
+builder.Services.AddScoped<IAppFormRepo, AppFormRepo>();
 //builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
