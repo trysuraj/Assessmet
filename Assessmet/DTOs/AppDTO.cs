@@ -9,15 +9,15 @@ namespace Assessmet.DTOs
 {
     public class AppDTO
     {
-        public string ImageUrl { get; set; }
-        public string ResumeUrl { get; set; }
+        public string ImageUpload { get; set; }
+        public string Resume { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
         public string Nationality { get; set; }
-        public string Residence { get; set; }
-        public string IDNumber { get; set; }
+        public string CurrentResidence { get; set; }
+        public string IdNumber { get; set; }
         public Gender Gender { get; set; }
         public string ProgramTitle { get; set; }
         public string ProgramSummary { get; set; }
@@ -30,7 +30,7 @@ namespace Assessmet.DTOs
         public DateTime ApplciationOpen { get; set; }
         public DateTime ApplicationClose { get; set; }
         public int Duration { get; set; }
-        public string ProgramLocation { get; set; }
+        public string Location { get; set; }
         public MinQual MinQualification { get; set; }
         public int MaxApplications { get; set; }
         public ICollection<Education> Educations { get; set; }

@@ -20,7 +20,7 @@ namespace Assessmet.DTOs
         public DateTime ApplciationOpen { get; set; }
         public DateTime ApplicationClose { get; set; }
         public int Duration { get; set; }
-        public string ProgramLocation { get; set; }
+        public string Location { get; set; }
         public MinQual MinQualification { get; set; }
         public int MaxApplications { get; set; }
     }

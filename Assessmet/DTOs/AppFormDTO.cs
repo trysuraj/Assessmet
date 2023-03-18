@@ -9,7 +9,7 @@ namespace Assessmet.DTOs
 {
     public class AppFormDTO
     {
-        public string ImageImageUpload { get; set; }
+        public string ImageUpload { get; set; }
         public string Resume { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }

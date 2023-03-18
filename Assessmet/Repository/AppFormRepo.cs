@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Assessmet.Models
+namespace Assessmet.Repository
 {
-    internal class ApplicationDetails
+    internal class AppDetailsRepo
     {
     }
 }
