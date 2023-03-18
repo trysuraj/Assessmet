@@ -8,6 +8,7 @@ namespace Assessmet.Models
 {
     public class WorkFlow
     {
+        public ICollection<Stages> stages { get; set; }
         public IntVidQuest VidInterviewQuest { get; set; }
         public string StageName { get; set; } 
         public string StageType { get; set; }

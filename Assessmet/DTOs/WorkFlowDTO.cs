@@ -9,7 +9,7 @@ namespace Assessmet.DTOs
 {
     public class WorkFlowDTO
     {
-        public ICollection<Stage> stages { get; set; }
+        public ICollection<Stages> stages { get; set; }
         public IntVidQuest VidInterviewQuest { get; set; }
         public string StageName { get; set; }
         public string StageType { get; set; }
